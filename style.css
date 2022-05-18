@@ -39,3 +39,157 @@
 
 
 /** footer **/
+
+body{
+    margin: 0%; /*Per allungare il footer a tutta la pagina*/
+}
+
+/*Inizializzo flexbox e divido gli spazi tra l'immagine ed il resto del footer*/
+footer{
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure{
+    width: 15%;
+    align-self: flex-start;
+}
+
+div.rightside{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Proporziono il lato a destra dell'immagine*/
+div.rollingstoneblock{
+    width: 40%;
+
+}
+
+div.legalblock{
+    width: 20%;
+}
+
+div.connectock{
+    width: 20%;
+}
+
+div.subscriptionblock{
+    width: 19%;
+}
+
+div.newsletterblock, div.tipblock{
+    width: 100%;
+  
+}
+
+/*ridimensiono la parte newsletter e have a tip*/
+div.newsletterblock{
+    display: flex;
+    border-top: gray solid 1px;
+    border-bottom: gray solid 1px;
+     padding: 1.5% 0;
+}
+div.newsletterblock > h3{
+    width: 33%;
+    margin: 0;
+    font-size: 1.3em;
+}
+div.newsletterblock > form{
+    width: 67%;
+}
+form > input{
+    width: 60%;
+    height: 80%;
+}
+
+
+div.tipblock{
+    display: flex;
+    
+}
+div.tipblock > h3{
+    width: 20%;
+}
+div.tipblock > p{
+    width: 40%;
+    font-family: unset;
+    font-weight: thin;
+}
+
+
+
+/*sistemo il div rollingstoneblock*/
+
+div.rollingstoneblock{
+   padding-bottom: 6%;
+}
+div.rollingstoneblock h4{
+    margin: 0;
+    margin-top: 5%;
+}
+div.rollingstoneblock ul{
+    padding: 0;
+}
+div.rollingstoneblock ul{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+}
+div.rollingstoneblock ul li{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul > li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img[src*=logo]{
+    width: 20px;
+    height: 20px;
+}
+
+img[src*=mrbeast]{
+    width: 100%;
+    position: relative;
+    left: 10%;
+}
