@@ -57,13 +57,13 @@ footer{
 }
 
 figure{
-    width: 13%;
+    flex-basis: 13%;
     align-self: flex-start;
     margin-top: 2%;
 }
 
 div.rightside{
-    width: 55%;
+    flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -71,26 +71,30 @@ div.rightside{
     margin-top: 1%;
 }
 
-/*Proporziono il lato a destra dell'immagine*/
+/*Proporziono il lato destro del footer*/
 div.rollingstoneblock{
-    width: 28%;
-
+    flex-basis: 30%;
+    box-sizing: border-box;
 }
 
 div.legalblock{
-    width: 17%;
+    flex-basis: 20%;
+    box-sizing: border-box;
 }
 
 div.connectock{
-    width: 16%;
+    flex-basis: 20%;
+    box-sizing: border-box;
 }
 
 div.subscriptionblock{
-    width: 19%;
+    flex-basis: 25%;
+    box-sizing: border-box;
 }
 
 div.newsletterblock, div.tipblock{
-    width: 100%;  
+    flex-basis: 100%;  
+    box-sizing: border-box;
 }
 
 /*ridimensiono la parte newsletter e have a tip*/
@@ -102,17 +106,17 @@ div.newsletterblock{
      margin-top: 2%;
 }
 div.newsletterblock > h3{
-    width: 33%;
+    flex-basis: 33%;
     margin: 0;
     font-size: 2em;
 }
 div.newsletterblock > form{
-    width: 67%;
+    flex-basis: 67%;
     display: flex;
     align-items: center;
 }
 form > input{
-    width: 67%;
+    flex-basis: 67%;
     height: 80%;
     margin-right: 3%;
 }
@@ -120,7 +124,7 @@ div.newsletterblock form > button{
     color: white;
     background-color: black;
      border: white 2px solid;
-     width:30%;
+     flex-basis:30%;
      font-weight: bold;
      cursor: pointer;
      height: 30px;
@@ -294,20 +298,21 @@ div.subscriptionblock form.black > input{
 /*Sistemo la sezione bianca sotto il footer*/
 
 div.postfooter{
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     max-height: fit-content;
 }
 div.pmctext{
-    width: 75%;
+    flex-basis: 80%;
     display: flex;
     align-self: center;
     justify-content: center;
 }
 div.ourbrands{
-    width: 25%;
+    flex-basis: 20%;
 }
 div.pmctext > figure{
     margin: 0;
@@ -326,8 +331,6 @@ div.ourbrands select{
     font-weight: bold;
     border: solid 1px gray;
 }
-
-
 
 
 
