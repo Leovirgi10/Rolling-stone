@@ -1,6 +1,5 @@
 /** general style **/
-
-
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 
 
@@ -39,3 +38,327 @@
 
 
 /** footer **/
+
+body{
+    margin: 0%; /*Per allungare il footer a tutta la pagina*/
+}
+
+/*Inizializzo flexbox e divido gli spazi tra l'immagine ed il resto del footer*/
+div.blackfooter:not(div.postfooter){
+    font-family: 'Public Sans',sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure{
+    flex-basis: 13%;
+    align-self: flex-start;
+    margin-top: 2%;
+}
+
+div.rightside{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+/*Proporziono il lato destro del footer*/
+div.rollingstoneblock{
+    flex-basis: 30%;
+    box-sizing: border-box;
+}
+
+div.legalblock{
+    flex-basis: 20%;
+    box-sizing: border-box;
+}
+
+div.connectock{
+    flex-basis: 20%;
+    box-sizing: border-box;
+}
+
+div.subscriptionblock{
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+
+div.newsletterblock, div.tipblock{
+    flex-basis: 100%;  
+    box-sizing: border-box;
+}
+
+/*ridimensiono la parte newsletter e have a tip*/
+div.newsletterblock{
+    display: flex;
+    border-top: gray solid 1px;
+    border-bottom: gray solid 1px;
+     padding: 1.5% 0;
+     margin-top: 2%;
+}
+div.newsletterblock > h3{
+    flex-basis: 33%;
+    margin: 0;
+    font-size: 2em;
+}
+div.newsletterblock > form{
+    flex-basis: 67%;
+    display: flex;
+    align-items: center;
+}
+form > input{
+    flex-basis: 67%;
+    height: 80%;
+    margin-right: 3%;
+}
+div.newsletterblock form > button{
+    color: white;
+    background-color: black;
+     border: white 2px solid;
+     flex-basis:30%;
+     font-weight: bold;
+     cursor: pointer;
+     height: 30px;
+     cursor: pointer;
+}
+
+
+div.tipblock{
+    display: flex;
+    
+}
+div.tipblock > h3{
+    width: 20%;
+    align-self: center;
+    font-size: 2em;
+}
+div.tipblock > p{
+    width: 45%;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 100;
+}
+div.tipblock form{
+    width: 20%;
+    align-self: center;
+    text-align: center;
+}
+div.tipblock form > input{
+    color: white;
+    background-color: black;
+     border: white 2px solid;
+     width:80%;
+     font-weight: bold;
+     cursor: pointer;
+     height: 30px;
+}
+div.tipblock img{
+    width: 15%;
+    height: 100%;
+    align-self: center; 
+}
+
+
+
+/*sistemo il div rollingstoneblock*/
+
+div.rollingstoneblock{
+    font-size: 1.3em;
+   padding-bottom: 6%;
+   padding-right: 3%;
+}
+div.rollingstoneblock h4{
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5%;
+}
+div.rollingstoneblock ul{
+    padding: 0;
+}
+div.rollingstoneblock ul{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+}
+div.rollingstoneblock ul li{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 3%;
+}
+
+
+/*Sistemo il div legalblock*/
+div.legalblock{
+    font-size: 1.3em;
+    padding-bottom: 6%;
+    padding-left: 2%;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-right: 2%;
+}
+div.legalblock h4{
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5%;
+}
+div.legalblock > ul{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+div.legalblock ul li{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 3%;
+}
+
+/*Inizio a lavorare sulle dimensioni e proporzioni di Connectwithusblock*/
+div.connectblock{
+    padding-bottom: 11%;
+    font-size: 1.3em;
+    padding-left: 2%;
+    border-right: 1px solid gray;
+    padding-right: 2%;
+}
+div.connectblock h4{
+font-size: 1.2em;
+margin: 0;
+margin-top: 5%;
+}
+div.connectblock ul{
+    display: flex;
+   flex-flow: column nowrap;
+   padding: 0;
+   align-items: flex-start;
+}
+div.connectblock ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+}
+div.connectblock a{
+    padding-left: 5%;
+}
+
+
+/*Inizio a lavorare sul div subscriptionblock e i suoi link stilizzati*/
+div.subscriptionblock{
+    padding-left: 2%;
+    padding-bottom: 5%;
+    font-size: 1.3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 5%;
+}
+div.subscriptionblock h4{
+    font-size: 1.2em;
+    margin: 0;
+    padding-bottom: 5%;
+}
+div.subscriptionblock form{
+    width: 100%;
+    height: 40px;
+   
+}
+div.subscriptionblock form.red > input{
+   color: white;
+   background-color: red;
+    border: none;
+    width:100%;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+div.subscriptionblock form.black > input{
+    color: white;
+    background-color: black;
+     border: white 2px solid;
+     width:100%;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+
+
+
+/*Sistemo la sezione bianca sotto il footer*/
+
+div.postfooter{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: fit-content;
+}
+div.pmctext{
+    flex-basis: 80%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+div.ourbrands{
+    flex-basis: 20%;
+}
+div.pmctext > figure{
+    margin: 0;
+    width: fit-content;
+}
+div.pmctext img{
+margin-top: 6%;
+}
+div.pmctext pre{
+    font-size: 0.9em;
+}
+div.ourbrands select{
+    background-color: white;
+    width: 40%;
+    height: 25px;
+    font-weight: bold;
+    border: solid 1px gray;
+}
+
+
+
+
+/*Modifiche stilistiche e dimensionali minori*/
+
+ul > li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img[src*=logo]{
+    width: 20px;
+    height: 20px;
+}
+
+img[src*=mrbeast]{
+    width: 100%;
+    position: relative;
+    left: 10%;
+    height: 250px;
+}
+
+img[src*=PMG]{
+    width: 100px;
+    height: 40px;   
+}
