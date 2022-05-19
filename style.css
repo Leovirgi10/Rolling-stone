@@ -44,7 +44,7 @@ body{
 }
 
 /*Inizializzo flexbox e divido gli spazi tra l'immagine ed il resto del footer*/
-footer{
+div.blackfooter:not(div.postfooter){
     font-family: 'Public Sans',sans-serif;
     font-size: 0.7em;
     font-weight: bold;
