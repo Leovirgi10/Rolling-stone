@@ -62,7 +62,7 @@ figure{
     margin-top: 2%;
 }
 
-div.rightside{
+div.rightsidefooter{
     flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +161,7 @@ div.tipblock form > input{
      cursor: pointer;
      height: 30px;
 }
-div.tipblock img{
+footer div.tipblock img{
     width: 15%;
     height: 100%;
     align-self: center; 
@@ -337,16 +337,16 @@ div.ourbrands select{
 
 /*Modifiche stilistiche e dimensionali minori*/
 
-ul > li{
+footer ul > li{
     list-style-type: none;
 }
 
-a{
+footer a{
     text-decoration: none;
     color: inherit;
 }
 
-img[src*=logo]{
+footer img[src*=logo]{
     width: 20px;
     height: 20px;
 }
